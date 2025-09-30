@@ -1,4 +1,4 @@
-<img width="441" height="347" alt="image" src="https://github.com/user-attachments/assets/d0ef1a54-b4e1-4b8d-b4b4-0de79cfdd15c" />
+<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/d0ef1a54-b4e1-4b8d-b4b4-0de79cfdd15c" />
 
 # Exercícios SQL Server - Fundamentos 
 
