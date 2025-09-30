@@ -15,3 +15,8 @@ FROM SalesLT.Customer as sc
 SELECT sc.FirstName as 'Primeiro nome', sc.LastName as 'Ultimo nome'
 FROM SalesLT.Customer as sc
 ORDER BY sc.FirstName ASC
+
+-- exercise 03: return clients only with middlename contain name "Smith"
+SELECT *
+FROM SalesLT.Customer as sc
+WHERE sc.MiddleName LIKE '%Smith%'
