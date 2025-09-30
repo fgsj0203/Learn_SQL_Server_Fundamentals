@@ -31,3 +31,8 @@ ORDER BY sp.ListPrice DESC
 SELECT *
 FROM SalesLT.[Product] as sp
 WHERE sp.ProductNumber LIKE 'BK-%'
+
+--exercise 06: return of 10 first clients 
+SELECT TOP 10 *
+FROM SalesLT.Customer as sc
+ORDER BY sc.FirstName ASC
