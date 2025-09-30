@@ -47,3 +47,9 @@ WHERE sa.StateProvince LIKE 'WA%'
 SELECT *
 FROM SalesLT.Customer as sc
 WHERE sc.FirstName LIKE 'J%'
+
+-- exercise 09: return products with price in between 50 and 100
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE sp.ListPrice BETWEEN 50 and 100
+ORDER BY sp.ListPrice DESC
