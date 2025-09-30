@@ -15,6 +15,8 @@
 ## Selecione a versão destacada
 <img width="846" height="353" alt="image" src="https://github.com/user-attachments/assets/f054f435-8cb6-4ae4-938e-c1d7883a1a3d" />
 
+### OBS.: As ações a seguir deverão ser feitas dentro da ferramenta devidamente configurada (consulte como instalar e configurar o SSMS)
+
 ## Próximo passo é clicar com o botão direito em cima da pasta *Banco de dados* e clicar em *Restaurar banco de dados*
 <img width="400" height="254" alt="image" src="https://github.com/user-attachments/assets/ca571419-5c77-497f-8d7a-dd808c5cb974" />
 
