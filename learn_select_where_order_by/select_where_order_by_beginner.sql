@@ -26,3 +26,8 @@ SELECT *
 FROM SalesLT.[Product] as sp
 WHERE sp.ListPrice > 100
 ORDER BY sp.ListPrice DESC
+
+-- exercise 05: return products if ProductNumber is started "BK-"
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE sp.ProductNumber LIKE 'BK-%'
