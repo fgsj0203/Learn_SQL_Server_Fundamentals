@@ -53,3 +53,8 @@ SELECT *
 FROM SalesLT.[Product] as sp
 WHERE sp.ListPrice BETWEEN 50 and 100
 ORDER BY sp.ListPrice DESC
+
+-- exercise 10: return clients in order of CompanyName in format decrescent 
+SELECT *
+FROM SalesLT.Customer as sc
+ORDER BY sc.CompanyName DESC
