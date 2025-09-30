@@ -42,3 +42,8 @@ SELECT *
 FROM SalesLT.Customer as sc INNER JOIN SalesLT.CustomerAddress as sca ON sc.CustomerID = sca.CustomerID
 INNER JOIN SalesLT.[Address] as sa ON sca.AddressID = sa.AddressID
 WHERE sa.StateProvince LIKE 'WA%'
+
+-- exercise 08: return name of clients is started a letter "J"
+SELECT *
+FROM SalesLT.Customer as sc
+WHERE sc.FirstName LIKE 'J%'
