@@ -25,3 +25,4 @@ WHERE sc.MiddleName LIKE '%Smith%'
 SELECT *
 FROM SalesLT.[Product] as sp
 WHERE sp.ListPrice > 100
+ORDER BY sp.ListPrice DESC
