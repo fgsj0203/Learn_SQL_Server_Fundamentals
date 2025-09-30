@@ -23,4 +23,4 @@
 ## Após isso, clicar primeiro no ícone com 3 pontos sinalizado para [seta superior apontando para baixo]
 <img width="857" height="713" alt="image" src="https://github.com/user-attachments/assets/01e741e4-abb8-4e1d-9132-ad6290d8ece9" />
 
-> E ao clicar em adicionar você deveria procurar o arquivo .bak no caminho que você salvou 
+*E ao clicar em adicionar você deveria procurar o arquivo **.bak** no caminho que você salvou* 
