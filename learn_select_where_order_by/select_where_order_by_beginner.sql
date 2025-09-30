@@ -20,3 +20,8 @@ ORDER BY sc.FirstName ASC
 SELECT *
 FROM SalesLT.Customer as sc
 WHERE sc.MiddleName LIKE '%Smith%'
+
+-- exercise 04: return products with value price is bigger 100
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE sp.ListPrice > 100
