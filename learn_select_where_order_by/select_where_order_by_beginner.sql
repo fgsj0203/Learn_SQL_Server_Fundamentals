@@ -36,3 +36,9 @@ WHERE sp.ProductNumber LIKE 'BK-%'
 SELECT TOP 10 *
 FROM SalesLT.Customer as sc
 ORDER BY sc.FirstName ASC
+
+-- exercise 07: return clients a living in state started "WA"
+SELECT *
+FROM SalesLT.Customer as sc INNER JOIN SalesLT.CustomerAddress as sca ON sc.CustomerID = sca.CustomerID
+INNER JOIN SalesLT.[Address] as sa ON sca.AddressID = sa.AddressID
+WHERE sa.StateProvince LIKE 'WA%'
