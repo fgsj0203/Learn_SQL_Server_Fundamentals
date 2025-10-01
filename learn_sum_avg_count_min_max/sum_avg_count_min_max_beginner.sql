@@ -28,7 +28,12 @@ SELECT COUNT(sp.ProductID) as 'Qtd de produtos com cor'
 FROM SalesLT.[Product] as sp
 WHERE sp.Color is NOT NULL
 
--- exercise 06: 
+-- exercise 06: return of amount clients for state/province 
 SELECT COUNT(sc.CustomerID) as 'Qtd clientes', sa.StateProvince as 'Estado/Provincia'
 FROM SalesLT.Customer as sc INNER JOIN SalesLT.[Address] as sa ON sc.CustomerID = sa.AddressID
 GROUP BY sa.StateProvince
+
+-- exercise 07: return of clients for city
+SELECT COUNT(sc.CustomerID) as 'Clientes', sa.City as 'Cidade'
+FROM SalesLT.Customer as sc INNER JOIN SalesLT.[Address] as sa ON sc.CustomerID = sa.AddressID
+GROUP BY sa.City
