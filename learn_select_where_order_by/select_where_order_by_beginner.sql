@@ -105,3 +105,8 @@ FROM SalesLT.Customer as sc
 SELECT *
 FROM SalesLT.Customer as sc
 WHERE sc.CompanyName is NULL
+
+-- exercise 20: return products of name started "Mountain"
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE sp.[Name] LIKE 'Mountain%'
