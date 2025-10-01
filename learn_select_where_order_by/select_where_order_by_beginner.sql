@@ -100,3 +100,8 @@ ORDER BY sp.ListPrice DESC
 -- exercise 18: return name complete of customers, First name with Last name.
 SELECT sc.FirstName + ' ' + sc.LastName as 'Nome completo'
 FROM SalesLT.Customer as sc
+
+-- exercise 19: return all clients of name Company is null
+SELECT *
+FROM SalesLT.Customer as sc
+WHERE sc.CompanyName is NULL
