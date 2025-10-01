@@ -91,3 +91,8 @@ SELECT *
 FROM SalesLT.Customer as sc
 WHERE sc.MiddleName is NOT NULL
 ORDER BY sc.MiddleName ASC
+
+-- exercise 17: return price of products in ordering values (bigger -> smaller)
+SELECT *
+FROM SalesLT.[Product] as sp
+ORDER BY sp.ListPrice DESC
