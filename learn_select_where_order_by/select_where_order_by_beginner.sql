@@ -58,3 +58,9 @@ ORDER BY sp.ListPrice DESC
 SELECT *
 FROM SalesLT.Customer as sc
 ORDER BY sc.CompanyName DESC
+
+-- exercise 11: return clients of living in "Toronto"
+SELECT *
+FROM SalesLT.[Address] as sa INNER JOIN SalesLT.CustomerAddress as sca ON sa.AddressID = sca.AddressID
+INNER JOIN SalesLT.Customer as sc ON sca.CustomerID = sc.CustomerID
+WHERE sa.City = 'Toronto'
