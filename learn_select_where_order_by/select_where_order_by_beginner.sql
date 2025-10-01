@@ -74,3 +74,8 @@ WHERE sp.Color is NULL
 SELECT *
 FROM SalesLT.Customer as sc
 WHERE sc.EmailAddress LIKE '%adventure-works%'
+
+-- exercise 14: return products if weight is differente value NULL
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE sp.[Weight] is NOT NULL 
