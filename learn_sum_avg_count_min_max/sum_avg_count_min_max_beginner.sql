@@ -42,3 +42,8 @@ GROUP BY sa.City
 SELECT AVG(sp.StandardCost) as 'Preco medio', sp.Color as 'Cor do produto' 
 FROM SalesLT.[Product] as sp
 GROUP BY sp.Color
+
+-- exercise 09: return amount Products based in ProductCategoryID
+SELECT COUNT(sp.ProductID) as 'QTD do produto por ID', sp.ProductCategoryID as 'ID do produto'
+FROM SalesLT.[Product] as sp
+GROUP BY sp.ProductCategoryID
