@@ -11,3 +11,6 @@ Description: File with scripts of exercises "SUM, AVG, COUNT, MIN, MAX"
 SELECT COUNT(*) as 'Qtd de clientes na tabela'
 FROM SalesLT.Customer as sc
 
+-- exercise 02: return average price of products
+SELECT AVG(sp.ListPrice) as 'Preco medio dos produtos'
+FROM SalesLT.[Product] as sp
