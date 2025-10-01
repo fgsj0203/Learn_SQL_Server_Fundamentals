@@ -84,3 +84,4 @@ WHERE sp.[Weight] is NOT NULL
 SELECT *
 FROM SalesLT.[Product] as sp
 WHERE sp.StandardCost > 500
+ORDER BY sp.StandardCost DESC
