@@ -64,3 +64,8 @@ SELECT *
 FROM SalesLT.[Address] as sa INNER JOIN SalesLT.CustomerAddress as sca ON sa.AddressID = sca.AddressID
 INNER JOIN SalesLT.Customer as sc ON sca.CustomerID = sc.CustomerID
 WHERE sa.City = 'Toronto'
+
+-- exercise 12: return all products of color is not informed
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE sp.Color is NULL
