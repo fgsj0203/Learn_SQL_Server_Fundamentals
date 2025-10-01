@@ -85,3 +85,9 @@ SELECT *
 FROM SalesLT.[Product] as sp
 WHERE sp.StandardCost > 500
 ORDER BY sp.StandardCost DESC
+
+-- exercise 16: return clients of middlename is not null
+SELECT *
+FROM SalesLT.Customer as sc
+WHERE sc.MiddleName is NOT NULL
+ORDER BY sc.MiddleName ASC
