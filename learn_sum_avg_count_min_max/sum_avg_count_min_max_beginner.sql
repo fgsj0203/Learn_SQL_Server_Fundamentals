@@ -37,3 +37,8 @@ GROUP BY sa.StateProvince
 SELECT COUNT(sc.CustomerID) as 'Clientes', sa.City as 'Cidade'
 FROM SalesLT.Customer as sc INNER JOIN SalesLT.[Address] as sa ON sc.CustomerID = sa.AddressID
 GROUP BY sa.City
+
+-- exercise 08: return average price for color
+SELECT AVG(sp.StandardCost) as 'Preco medio', sp.Color as 'Cor do produto' 
+FROM SalesLT.[Product] as sp
+GROUP BY sp.Color
