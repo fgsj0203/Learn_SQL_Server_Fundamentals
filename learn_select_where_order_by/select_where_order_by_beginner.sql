@@ -96,3 +96,7 @@ ORDER BY sc.MiddleName ASC
 SELECT *
 FROM SalesLT.[Product] as sp
 ORDER BY sp.ListPrice DESC
+
+-- exercise 18: return name complete of customers, First name with Last name.
+SELECT sc.FirstName + ' ' + sc.LastName as 'Nome completo'
+FROM SalesLT.Customer as sc
