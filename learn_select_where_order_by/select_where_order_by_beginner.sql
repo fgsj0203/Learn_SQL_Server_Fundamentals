@@ -79,3 +79,8 @@ WHERE sc.EmailAddress LIKE '%adventure-works%'
 SELECT *
 FROM SalesLT.[Product] as sp
 WHERE sp.[Weight] is NOT NULL 
+
+-- exercise 15: return products of value in column StandardCost is bigger 500
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE sp.StandardCost > 500
