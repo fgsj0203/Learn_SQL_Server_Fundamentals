@@ -69,3 +69,8 @@ WHERE sa.City = 'Toronto'
 SELECT *
 FROM SalesLT.[Product] as sp
 WHERE sp.Color is NULL
+
+-- exercise 13: return clients if column email contain "adventure-works"
+SELECT *
+FROM SalesLT.Customer as sc
+WHERE sc.EmailAddress LIKE '%adventure-works%'
