@@ -47,3 +47,8 @@ GROUP BY sp.Color
 SELECT COUNT(sp.ProductID) as 'QTD do produto por ID', sp.ProductCategoryID as 'ID do produto'
 FROM SalesLT.[Product] as sp
 GROUP BY sp.ProductCategoryID
+
+-- exercise 10: return sum total of price of product category
+SELECT SUM(sp.ListPrice) as 'Soma total por produto', spc.[Name] as 'Categoria produto'
+FROM SalesLT.[Product] as sp INNER JOIN SalesLT.ProductCategory as spc ON sp.ProductCategoryID = spc.ProductCategoryID
+GROUP BY spc.[Name]
