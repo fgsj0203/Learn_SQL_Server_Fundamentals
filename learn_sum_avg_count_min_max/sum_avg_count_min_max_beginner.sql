@@ -18,3 +18,7 @@ FROM SalesLT.[Product] as sp
 -- exercise 03: return smaller and bigger price of products
 SELECT MIN(sp.ListPrice) as 'Produto mais barato', MAX(sp.ListPrice) as 'Produto mais caro'
 FROM SalesLT.[Product] as sp
+
+-- exercise 04: return sum of prices in products 
+SELECT SUM(sp.ListPrice) as 'Soma de todos os precos'
+FROM SalesLT.[Product] as sp
