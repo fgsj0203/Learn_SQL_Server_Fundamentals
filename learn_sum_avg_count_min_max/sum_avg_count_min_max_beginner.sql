@@ -56,3 +56,7 @@ GROUP BY spc.[Name]
 -- exercise 11: return sum total values of orders in SalesLT.SalesOrderHeader
 SELECT COUNT(ssoh.SalesOrderID) as 'Qtd de ordens de vendas'
 FROM SalesLT.SalesOrderHeader as ssoh
+
+-- exercise 12: return value of sum total orders
+SELECT SUM(ssoh.TotalDue) as 'Valor total dos pedidos'
+FROM SalesLT.SalesOrderHeader as ssoh
