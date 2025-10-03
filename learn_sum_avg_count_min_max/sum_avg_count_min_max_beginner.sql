@@ -52,3 +52,7 @@ GROUP BY sp.ProductCategoryID
 SELECT SUM(sp.ListPrice) as 'Soma total por produto', spc.[Name] as 'Categoria produto'
 FROM SalesLT.[Product] as sp INNER JOIN SalesLT.ProductCategory as spc ON sp.ProductCategoryID = spc.ProductCategoryID
 GROUP BY spc.[Name]
+
+-- exercise 11: return sum total values of orders in SalesLT.SalesOrderHeader
+SELECT COUNT(ssoh.SalesOrderID) as 'Qtd de ordens de vendas'
+FROM SalesLT.SalesOrderHeader as ssoh
