@@ -11,3 +11,7 @@ Description: File with scripts of exercises JOINS "INNER, LEFT, RIGHT, FULL"
 SELECT sc.FirstName + ' ' + sc.LastName as 'Nome completo', ssoh.SalesOrderID as 'ID de venda' 
 FROM SalesLT.Customer as sc INNER JOIN SalesLT.SalesOrderHeader as ssoh ON sc.CustomerID = ssoh.CustomerID
 ORDER BY sc.FirstName ASC
+
+-- exercise 02: return product and you category
+SELECT sp.[Name] as 'Nome do produto', spc.[Name] as 'Categoria do produto'
+FROM SalesLT.[Product] as sp INNER JOIN SalesLT.ProductCategory as spc ON sp.ProductCategoryID = spc.ProductCategoryID
