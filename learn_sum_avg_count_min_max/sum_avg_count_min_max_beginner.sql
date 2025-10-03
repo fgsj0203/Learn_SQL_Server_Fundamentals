@@ -60,3 +60,7 @@ FROM SalesLT.SalesOrderHeader as ssoh
 -- exercise 12: return value of sum total orders
 SELECT SUM(ssoh.TotalDue) as 'Valor total dos pedidos'
 FROM SalesLT.SalesOrderHeader as ssoh
+
+-- exercise 13: return value average of freight orders
+SELECT AVG(ssoh.Freight) as 'Preco medio do frete dos pedidos'
+FROM SalesLT.SalesOrderHeader as ssoh
