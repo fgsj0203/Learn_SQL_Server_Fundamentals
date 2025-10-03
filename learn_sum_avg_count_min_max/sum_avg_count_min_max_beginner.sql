@@ -64,3 +64,7 @@ FROM SalesLT.SalesOrderHeader as ssoh
 -- exercise 13: return value average of freight orders
 SELECT AVG(ssoh.Freight) as 'Preco medio do frete dos pedidos'
 FROM SalesLT.SalesOrderHeader as ssoh
+
+-- exercise 14: return of smaller and bigger value of freight
+SELECT MIN(ssoh.Freight) as 'Frete mais barato', MAX(ssoh.Freight) as 'Frete mais caro'
+FROM SalesLT.SalesOrderHeader as ssoh
