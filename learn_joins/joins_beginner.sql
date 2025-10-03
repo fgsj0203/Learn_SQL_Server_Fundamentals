@@ -19,3 +19,4 @@ FROM SalesLT.[Product] as sp INNER JOIN SalesLT.ProductCategory as spc ON sp.Pro
 -- exercise 03: return name of client and address of client
 SELECT sc.FirstName + ' ' + sc.LastName as 'Nome completo/Cliente', sca.AddressType as 'Tipo endereco'
 FROM SalesLT.Customer as sc INNER JOIN SalesLT.CustomerAddress as sca ON sc.CustomerID = sca.CustomerID
+ORDER BY sc.FirstName ASC -- Ordering name, initialize with letter A
