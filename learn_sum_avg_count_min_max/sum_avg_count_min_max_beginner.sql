@@ -2,7 +2,7 @@
 Author: Francisco Gomes da Silva Junior
 College: Estacio de Sa
 Course: Computer Science
-Date release: 29-09-2025, in format Brazil
+Date release: 01-10-2025, in format Brazil
 Version: 1.0
 Description: File with scripts of exercises "SUM, AVG, COUNT, MIN, MAX"
 */
