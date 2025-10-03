@@ -68,3 +68,7 @@ FROM SalesLT.SalesOrderHeader as ssoh
 -- exercise 14: return of smaller and bigger value of freight
 SELECT MIN(ssoh.Freight) as 'Frete mais barato', MAX(ssoh.Freight) as 'Frete mais caro'
 FROM SalesLT.SalesOrderHeader as ssoh
+
+-- exercise 15: return amount of sales based in orders ID
+SELECT COUNT(ssoh.CustomerID) as 'Qtd de venda baseado no ID-cliente'
+FROM SalesLT.SalesOrderHeader as ssoh
