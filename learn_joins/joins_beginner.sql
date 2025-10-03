@@ -24,3 +24,7 @@ ORDER BY sc.FirstName ASC -- Ordering name, initialize with letter A
 -- exercise 04: return all details of sales and orders
 SELECT *
 FROM SalesLT.SalesOrderDetail as ssod INNER JOIN SalesLT.SalesOrderHeader as ssoh ON ssod.SalesOrderID = ssoh.SalesOrderID
+
+-- exercise 05: return customers with orders is not null
+SELECT *
+FROM SalesLT.Customer as sc INNER JOIN SalesLT.SalesOrderHeader as ssoh ON sc.CustomerID = ssoh.CustomerID
