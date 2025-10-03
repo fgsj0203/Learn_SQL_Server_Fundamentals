@@ -15,3 +15,7 @@ ORDER BY sc.FirstName ASC
 -- exercise 02: return product and you category
 SELECT sp.[Name] as 'Nome do produto', spc.[Name] as 'Categoria do produto'
 FROM SalesLT.[Product] as sp INNER JOIN SalesLT.ProductCategory as spc ON sp.ProductCategoryID = spc.ProductCategoryID
+
+-- exercise 03: return name of client and address of client
+SELECT sc.FirstName + ' ' + sc.LastName as 'Nome completo/Cliente', sca.AddressType as 'Tipo endereco'
+FROM SalesLT.Customer as sc INNER JOIN SalesLT.CustomerAddress as sca ON sc.CustomerID = sca.CustomerID
