@@ -20,3 +20,7 @@ FROM SalesLT.[Product] as sp INNER JOIN SalesLT.ProductCategory as spc ON sp.Pro
 SELECT sc.FirstName + ' ' + sc.LastName as 'Nome completo/Cliente', sca.AddressType as 'Tipo endereco'
 FROM SalesLT.Customer as sc INNER JOIN SalesLT.CustomerAddress as sca ON sc.CustomerID = sca.CustomerID
 ORDER BY sc.FirstName ASC -- Ordering name, initialize with letter A
+
+-- exercise 04: return all details of sales and orders
+SELECT *
+FROM SalesLT.SalesOrderDetail as ssod INNER JOIN SalesLT.SalesOrderHeader as ssoh ON ssod.SalesOrderID = ssoh.SalesOrderID
