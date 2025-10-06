@@ -28,3 +28,8 @@ FROM SalesLT.SalesOrderDetail as ssod INNER JOIN SalesLT.SalesOrderHeader as sso
 -- exercise 05: return customers with orders is not null
 SELECT *
 FROM SalesLT.Customer as sc INNER JOIN SalesLT.SalesOrderHeader as ssoh ON sc.CustomerID = ssoh.CustomerID
+
+-- exercise 06: return all customers with orders sales not null
+SELECT *
+FROM SalesLT.Customer as sc LEFT JOIN SalesLT.SalesOrderHeader as ssoh ON sc.CustomerID = ssoh.CustomerID
+ORDER BY sc.CustomerID
