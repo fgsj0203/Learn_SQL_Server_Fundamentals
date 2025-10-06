@@ -42,3 +42,13 @@ FROM SalesLT.[Product] as sp LEFT JOIN SalesLT.ProductCategory as spc ON sp.Prod
 SELECT *
 FROM SalesLT.[Address] as sa INNER JOIN SalesLT.Customer as sc ON sa.AddressID = sc.CustomerID
 ORDER BY sa.AddressID ASC
+
+-- exercise 09: return name of customers, sales and city address of delivery
+SELECT *
+FROM SalesLT.SalesOrderHeader as ssoh INNER JOIN SalesLT.Customer as sc ON ssoh.CustomerID = sc.CustomerID
+     INNER JOIN SalesLT.[Address] as sa ON sa.AddressID = ssoh.ShipToAddressID
+
+-- exercise 10: return products of sales in > 5
+SELECT *
+FROM SalesLT.[Product] as sp INNER JOIN SalesLT.SalesOrderDetail as ssod ON sp.ProductID = ssod.ProductID
+WHERE ssod.OrderQty > 5
