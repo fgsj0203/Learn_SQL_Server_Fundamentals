@@ -33,3 +33,7 @@ FROM SalesLT.Customer as sc INNER JOIN SalesLT.SalesOrderHeader as ssoh ON sc.Cu
 SELECT *
 FROM SalesLT.Customer as sc LEFT JOIN SalesLT.SalesOrderHeader as ssoh ON sc.CustomerID = ssoh.CustomerID
 ORDER BY sc.CustomerID
+
+-- exercise 07: return products and subcategories 
+SELECT *
+FROM SalesLT.[Product] as sp LEFT JOIN SalesLT.ProductCategory as spc ON sp.ProductCategoryID = spc.ProductCategoryID
