@@ -37,3 +37,8 @@ ORDER BY sc.CustomerID
 -- exercise 07: return products and subcategories 
 SELECT *
 FROM SalesLT.[Product] as sp LEFT JOIN SalesLT.ProductCategory as spc ON sp.ProductCategoryID = spc.ProductCategoryID
+
+-- exercise 08: return address with name complete of customers
+SELECT *
+FROM SalesLT.[Address] as sa INNER JOIN SalesLT.Customer as sc ON sa.AddressID = sc.CustomerID
+ORDER BY sa.AddressID ASC
