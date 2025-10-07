@@ -74,9 +74,9 @@ Description: File with scripts of CREATE, UPDATE, INSERT, DELETE and DROP
 -- Table updated with columns valuePayment and datePayment
 
 --------------------------------------- INSERTING DATA IN TABLES --------------------------------------- 
-INSERT INTO customerTest([name], email, telephone, dateCreate)
-VALUES ('Francisco Gomes', 'fgsj.dev@outlook.com', '81-996757122', '10-07-2025'),
-       ('Jackilene de Melo', 'melo.jackilene@gmail.com', '81-123456789', '07-10-2025')
+-- INSERT INTO customerTest([name], email, telephone, dateCreate)
+-- VALUES ('Francisco Gomes', 'fgsj.dev@outlook.com', '81-996757122', '10-07-2025'),
+--       ('Jackilene de Melo', 'melo.jackilene@gmail.com', '81-123456789', '07-10-2025')
 
 -- Update table for alter data in two columns for difference with first ID customer
 -- UPDATE customerTest
