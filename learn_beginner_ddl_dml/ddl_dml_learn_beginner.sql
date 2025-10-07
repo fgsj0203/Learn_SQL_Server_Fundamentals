@@ -82,3 +82,9 @@ VALUES ('Francisco Gomes', 'fgsj.dev@outlook.com', '81-996757122', '10-07-2025')
 -- UPDATE customerTest
 -- SET email = 'fgsj.cin@gmail.com', name = 'Francisco Junior'
 -- WHERE customerID = 2
+
+-- Inserting most 1 value line in table customerTest
+-- INSERT INTO customerTest([name], email, telephone, dateCreate)
+-- VALUES ('Dona vera', 'donavera@test.com', '81-321654987', '10-07-2025'),
+--       ('Matheus', 'matheus.cheiracola@arrombado.com', '81-654987321', '10-07-2025'),
+--       ('Atylio', 'atylio.cheiracola@arrombado.com', '81-654357789', '10-07-2025')
