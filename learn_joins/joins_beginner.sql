@@ -52,3 +52,4 @@ FROM SalesLT.SalesOrderHeader as ssoh INNER JOIN SalesLT.Customer as sc ON ssoh.
 SELECT *
 FROM SalesLT.[Product] as sp INNER JOIN SalesLT.SalesOrderDetail as ssod ON sp.ProductID = ssod.ProductID
 WHERE ssod.OrderQty > 5
+
