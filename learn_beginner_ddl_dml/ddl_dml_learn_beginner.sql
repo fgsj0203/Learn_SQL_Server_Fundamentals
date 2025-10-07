@@ -67,3 +67,9 @@ Description: File with scripts of CREATE, UPDATE, INSERT, DELETE and DROP
 --                  dateBuy DATETIME NOT NULL,
 --                  providerID INT NOT NULL,
 --                  CONSTRAINT FK_Buy_ProviderProduct FOREIGN KEY (providerID) REFERENCES providerProduct(providerID))
+
+-- CREATE TABLE payment(paymentID INTEGER IDENTITY Primary Key NOT NULL,
+--                     orderID INT NOT NULL,
+--                     CONSTRAINT FK_payment_orderTest FOREIGN KEY (orderID) REFERENCES orderTest(orderID))
+-- Table updated with columns valuePayment and datePayment
+
