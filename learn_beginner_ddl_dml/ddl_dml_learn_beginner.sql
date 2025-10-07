@@ -8,35 +8,48 @@ Description: File with scripts of CREATE, UPDATE, INSERT, DELETE and DROP
 */
 
 -- Create database ddl_dml_learn
-CREATE DATABASE LearnManipulationTable
+--CREATE DATABASE LearnManipulationTable
+
+--USE LearnManipulationTable
 
 -- Create backup of database LearnManipulationTable
-BACKUP DATABASE LearnManipulationTable
-TO DISK = 'C:\Career_Technology\sql_server_learn\Adventure_Works_2022_LT\backup_database\LearnManipulationTable.bak'
+--BACKUP DATABASE LearnManipulationTable
+--TO DISK = 'C:\Career_Technology\sql_server_learn\Adventure_Works_2022_LT\backup_database\LearnManipulationTable.bak'
 
 -- Create table "Training" with columns trainingID, name, durationHours
-CREATE TABLE training (trainingID INTEGER IDENTITY Primary Key NOT NULL,
+--CREATE TABLE training (trainingID INTEGER IDENTITY Primary Key NOT NULL,
                        [name] VARCHAR(50) NOT NULL,
                        durationHours INTEGER NOT NULL)
 
 -- Create table "Employee" with columns employeeID, name, jobTitle, salary
-CREATE TABLE employee (employeeID INTEGER IDENTITY Primary Key NOT NULL,
-                       [name] VARCHAR(50) NOT NULL,
-                       jobTitle VARCHAR(50) NOT NULL,
-                       salary DECIMAL(8,2) NOT NULL)
+--CREATE TABLE employee (employeeID INTEGER IDENTITY Primary Key NOT NULL,
+                       --[name] VARCHAR(50) NOT NULL,
+                       --jobTitle VARCHAR(50) NOT NULL,
+                       --salary DECIMAL(8,2) NOT NULL)
 
 -- Create table "Department" with columns departmentID, name, location
-CREATE TABLE department(departmentID INTEGER IDENTITY Primary Key NOT NULL,
-                        [name] VARCHAR(50) NOT NULL,
-                        [location] VARCHAR(50) NOT NULL)
+--CREATE TABLE department(departmentID INTEGER IDENTITY Primary Key NOT NULL,
+--                        [name] VARCHAR(50) NOT NULL,
+--                        [location] VARCHAR(50) NOT NULL)
 
 -- Create table "CustomerTest" with columns customerID, name, email, telephone
-CREATE TABLE customerTest (customerID INTEGER IDENTITY Primary Key NOT NULL,
-                          [name] VARCHAR(50) NOT NULL,
-                          email VARCHAR(50) NOT NULL,
-                          telephone VARCHAR(50) NOT NULL)
+--CREATE TABLE customerTest (customerID INTEGER IDENTITY Primary Key NOT NULL,
+--                          [name] VARCHAR(50) NOT NULL,
+--                          email VARCHAR(50) NOT NULL,
+--                          telephone VARCHAR(50) NOT NULL)
 
 -- Create table "ProductTest" with columns productID, name, price
-CREATE TABLE productTest (productID INTEGER IDENTITY Primary Key NOT NULL,
-                          [name] VARCHAR(50) NOT NULL,
-                          price DECIMAL(8,2) NOT NULL)
+--CREATE TABLE productTest (productID INTEGER IDENTITY Primary Key NOT NULL,
+--                          [name] VARCHAR(50) NOT NULL,
+--                          price DECIMAL(8,2) NOT NULL)
+
+-- Create table "OrderTest" with columns orderID, dateOrder, customerID
+--CREATE TABLE orderTest (orderID INTEGER IDENTITY Primary Key NOT NULL,
+--                        dateOrder DATETIME NOT NULL,
+--                        customerID INT NOT NULL,
+--                        CONSTRAINT FK_Order_Customer FOREIGN KEY (customerID) REFERENCES customerTest(customerID))
+
+-- Inserting column DateCreate of type DATETIME in table CustomerTest
+--ALTER TABLE customerTest
+--ADD dateCreate datetime
+
