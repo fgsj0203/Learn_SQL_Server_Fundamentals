@@ -56,3 +56,14 @@ Description: File with scripts of CREATE, UPDATE, INSERT, DELETE and DROP
 -- Create table of name CategoryProduct with columns categoryID and nameCategory
 -- CREATE TABLE categoryProduct (categoryID INTEGER IDENTITY Primary Key NOT NULL,
 --                              nameCategory VARCHAR(50) NOT NULL)
+
+-- Create table of name providerProduct with columns providerID, nameProvider and cnpj
+-- CREATE TABLE providerProduct(providerID INTEGER IDENTITY Primary Key NOT NULL,
+--                             nameProvider VARCHAR(50) NOT NULL,
+--                             cnpj VARCHAR(30) NOT NULL)
+
+-- Create table of name buy with columns buyID, dateBuy, providerID (Foreign Key), valueTotal 
+-- CREATE TABLE buy (buyID INTEGER IDENTITY Primary Key NOT NULL,
+--                  dateBuy DATETIME NOT NULL,
+--                  providerID INT NOT NULL,
+--                  CONSTRAINT FK_Buy_ProviderProduct FOREIGN KEY (providerID) REFERENCES providerProduct(providerID))
