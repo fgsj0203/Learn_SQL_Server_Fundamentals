@@ -29,3 +29,14 @@ CREATE TABLE employee (employeeID INTEGER IDENTITY Primary Key NOT NULL,
 CREATE TABLE department(departmentID INTEGER IDENTITY Primary Key NOT NULL,
                         [name] VARCHAR(50) NOT NULL,
                         [location] VARCHAR(50) NOT NULL)
+
+-- Create table "CustomerTest" with columns customerID, name, email, telephone
+CREATE TABLE customerTest (customerID INTEGER IDENTITY Primary Key NOT NULL,
+                          [name] VARCHAR(50) NOT NULL,
+                          email VARCHAR(50) NOT NULL,
+                          telephone VARCHAR(50) NOT NULL)
+
+-- Create table "ProductTest" with columns productID, name, price
+CREATE TABLE productTest (productID INTEGER IDENTITY Primary Key NOT NULL,
+                          [name] VARCHAR(50) NOT NULL,
+                          price DECIMAL(8,2) NOT NULL)
