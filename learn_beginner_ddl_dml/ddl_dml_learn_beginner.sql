@@ -96,3 +96,7 @@ Description: File with scripts of CREATE, UPDATE, INSERT, DELETE and DROP
 --       ('product 3', 2000),
 --       ('product 4', 2500),
 --       ('product 5', 3000)
+
+-- Inserting one order for customer with customerID = 1
+-- INSERT INTO orderTest(dateOrder, customerID)
+-- VALUES (GETDATE(), 1)
