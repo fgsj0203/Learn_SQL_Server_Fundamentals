@@ -88,3 +88,11 @@ Description: File with scripts of CREATE, UPDATE, INSERT, DELETE and DROP
 -- VALUES ('Dona vera', 'donavera@test.com', '81-321654987', '10-07-2025'),
 --       ('Matheus', 'matheus.cheiracola@arrombado.com', '81-654987321', '10-07-2025'),
 --       ('Atylio', 'atylio.cheiracola@arrombado.com', '81-654357789', '10-07-2025')
+
+-- Inserting a 1 product in table productTest
+-- INSERT INTO productTest([name], price)
+-- VALUES ('product 1', 1000),
+--       ('product 2', 1500),
+--       ('product 3', 2000),
+--       ('product 4', 2500),
+--       ('product 5', 3000)
